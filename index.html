@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Bontà del Forno di Paolo e Chiara — panificio e pasticceria, Via Padova 268 Milano</title>
 <meta name="description" content="Bontà del Forno di Paolo e Chiara, Via Padova 268 a Milano: pane, pizze, focacce, dolci da forno e torte su ordinazione. 85 recensioni Google su 88 danno il massimo. Aperti lun–sab 7–19:30.">
 <link rel="canonical" href="https://rotenzark.github.io/bonta-del-forno/">
@@ -15,13 +16,39 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script>document.documentElement.className=document.documentElement.className.replace('no-js','js');</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Bakery","name":"Bontà del Forno di Paolo e Chiara","address":{"@type":"PostalAddress","streetAddress":"Via Padova 268","addressLocality":"Milano","postalCode":"20132","addressCountry":"IT"},"telephone":"+390274238164","url":"https://rotenzark.github.io/bonta-del-forno/","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"88"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"19:30"}]}
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Bontà del Forno di Paolo e Chiara",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Padova 268",
+    "addressLocality": "Milano",
+    "postalCode": "20132",
+    "addressCountry": "IT"
+  },
+  "telephone": "+390274238164",
+  "url": "https://rotenzark.github.io/bonta-del-forno/",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "07:00",
+      "closes": "19:30"
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -186,7 +213,7 @@
       </figure>
     </div>
     <div class="dove__m reveal">
-      <iframe title="Mappa: Bontà del Forno, Via Padova 268, Milano" data-i18n-title="dove.mappa" src="https://www.google.com/maps?q=Bont%C3%A0+del+Forno+Via+Padova+268+Milano&output=embed" width="600" height="450" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 450px"><template><iframe title="Mappa: Bontà del Forno, Via Padova 268, Milano" data-i18n-title="dove.mappa" src="https://www.google.com/maps?q=Bont%C3%A0+del+Forno+Via+Padova+268+Milano&output=embed" width="600" height="450" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/search/?api=1&amp;query=Bont%C3%A0%20del%20Forno%20Via%20Padova%20268%20Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </section>
 </main>
@@ -194,7 +221,7 @@
 <footer class="piede">
   <p class="piede__n">Bontà del Forno <em data-i18n="piede.di">di Paolo e Chiara</em></p>
   <p class="piede__d" data-i18n="piede.d">Via Padova 268, 20132 Milano · <a href="tel:+390274238164">02 7423 8164</a></p>
-  <p class="piede__b" data-i18n="piede.b">Sito dimostrativo realizzato da <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a> · le recensioni e le risposte sono riportate come pubblicate sulla loro scheda Google.</p>
+  <p class="piede__b" data-i18n="piede.b">Sito dimostrativo realizzato da <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · le recensioni e le risposte sono riportate come pubblicate sulla loro scheda Google.</p>
 </footer>
 
 <div class="barra">
@@ -211,5 +238,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="js/main.js?v=1"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
